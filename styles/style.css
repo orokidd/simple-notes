@@ -1,0 +1,168 @@
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+ul {
+  max-height: 740px;
+  overflow-y: scroll;
+  margin: 0 1.6rem 0 0;
+  padding: 0;
+  padding-right: 12px;
+  list-style: none;
+}
+
+li {
+  max-width: 260px;
+  min-width: 100px;
+  margin-top: 10px;
+  padding: 16px;
+  background-color: transparent;
+  border: solid 1px rgb(211, 211, 211);
+  border-radius: 6px;
+  transition-duration: 0.2s;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: rgba(24, 24, 24, 0.637);
+}
+
+.main-content {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+#input-button {
+  display: block;
+  margin: 10px 0;
+  padding: 2px 8px;
+}
+
+#input-box {
+  margin: 26px 0px 0px 0px;
+  border: solid 1px rgb(211, 211, 211);
+  border-radius: 6px;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+#new-note, #new-title {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 12px 12px 0px 12px;
+  min-width: 30rem;
+  max-width: 30rem;
+  color: white;
+}
+
+#new-title{
+  resize: none;
+  max-height: 26px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#new-note{
+  min-height: 140px;
+  font-size: 14px;
+}
+
+.main-title, .main-para{
+  width: 30.9rem;
+  padding-right: 12px;
+  color: white;
+  overflow: scroll;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+
+.main-title {
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.main-para {
+  max-height: 680px;
+}
+
+#small-span {
+  display: block;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgb(158, 158, 158);
+}
+
+.left-span, .left-title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: "Roboto", serif;
+  color: white;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+}
+
+.left-span {
+  -webkit-line-clamp: 3; 
+  line-clamp: 3;/* Limit to 3 lines */
+  font-size: 14px;
+}
+
+.left-title {
+  margin-bottom: .4rem;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+.opt-button {
+  display: inline;
+  opacity: 0;
+  margin: 6px 6px 0px 0px;
+  padding: 7px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  transition-duration: .2s;
+}
+
+.opt-button:hover {
+  background: rgb(63, 63, 63);
+}
+
+li:hover .opt-button {
+  opacity: 1;
+}
+
+i {
+  font-size: 16px;
+  color: rgb(211, 211, 211);
+}
+
+@media screen and (max-width: 840px) {
+  #new-note, #new-title {
+    /* min-width: 14rem; */
+    /* max-width: 14rem; */
+    min-width: 14rem;
+    width: 50.3vw;
+  }
+  li {
+    max-width: 100px;
+  }
+  .main-title, .main-para{
+    /* max-width: 14.9rem; */
+    width: 53vw;
+  }
+}
