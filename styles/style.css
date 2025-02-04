@@ -55,8 +55,7 @@ textarea:focus {
   border: none;
   background-color: transparent;
   padding: 12px 12px 0px 12px;
-  min-width: 30rem;
-  max-width: 30rem;
+  width: 30rem;
   color: white;
 }
 
@@ -153,10 +152,8 @@ i {
 
 @media screen and (max-width: 840px) {
   #new-note, #new-title {
-    /* min-width: 14rem; */
-    /* max-width: 14rem; */
-    min-width: 14rem;
-    width: 50.3vw;
+    max-width: 50.3vw;
+    min-width: 50.3vw;
   }
   li {
     max-width: 100px;
@@ -166,3 +163,27 @@ i {
     width: 53vw;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .main-content {
+    flex-direction: column-reverse; 
+  }
+  #new-note, #new-title {
+    max-width: 94%;
+    min-width: 94%;
+    padding: 12px 12px 0px 12px;
+  }
+  ul {
+    max-height: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    max-width: none;
+  }
+  .main-title, .main-para{
+    /* max-width: 14.9rem; */
+    width: 94vw;
+  }
+}
+
